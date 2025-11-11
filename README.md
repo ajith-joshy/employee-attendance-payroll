@@ -1,6 +1,6 @@
-# 🧭 Employee Attendance and Payroll Management System (Django API)
+🧭 Employee Attendance and Payroll Management System (Django API)
 
-## 📝 Project Overview
+📝 Project Overview
 
 This project is a Human Resource (HR) Management System** built using Django and Django REST Framework(DRF).  
 It manages employee records, attendance, leave tracking, payroll computation, and payslip generation with Excel export functionality.
@@ -37,7 +37,7 @@ The system is designed to automate the core HR operations such as tracking emplo
 
 ---
 
-## 🏗️ Tech Stack
+🏗️ Tech Stack
 
 | Category | Technology |
 |-----------|-------------|
@@ -49,6 +49,3 @@ The system is designed to automate the core HR operations such as tracking emplo
 | **IDE / Tools** | PyCharm, Postman |
 
 ---
-
-## 📁 Project Structure
-
