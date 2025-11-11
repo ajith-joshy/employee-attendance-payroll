@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Django / local
+*.sqlite3
+db.sqlite3
+/media/
+staticfiles/
+*.log
+
+# IDE/editor
+.idea/
+.vscode/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Secrets & local config
+.env
+.env.local
+secrets.json
+
+# PyCharm specific (if you want to exclude project config)
+# (optional) .idea/
+

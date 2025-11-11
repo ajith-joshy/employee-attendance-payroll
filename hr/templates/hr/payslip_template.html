@@ -1,0 +1,32 @@
+<!-- Project/hr/templates/hr/payslip_template.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Payslip - {{ p.employee.first_name }} {{ p.employee.last_name }}</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; color: #222; }
+    .header { text-align: center; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    pre { background:#f7f7f7; padding:10px; border:1px solid #eee; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Payslip</h2>
+    <p>{{ p.employee.first_name }} {{ p.employee.last_name }} — {{ p.employee.employee_code }}</p>
+    <p>Period: {{ p.payroll_period.year }}-{{ p.payroll_period.month }}</p>
+  </div>
+
+  <h3>Summary</h3>
+  <table>
+    <tr><th>Gross Pay</th><td>{{ p.gross_pay }}</td></tr>
+    <tr><th>Total Deductions</th><td>{{ p.total_deductions }}</td></tr>
+    <tr><th>Net Pay</th><td>{{ p.net_pay }}</td></tr>
+  </table>
+
+  <h3>Breakdown</h3>
+  <pre>{{ p.details|safe }}</pre>
+</body>
+</html>
